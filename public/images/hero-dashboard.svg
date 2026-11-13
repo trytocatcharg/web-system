@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" role="img" aria-labelledby="title desc">
+  <title id="title">Panel de analítica web</title>
+  <desc id="desc">Panel con gráficas de crecimiento en colores coral y rosa sobre fondo azul marino</desc>
+  <defs>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111a2e"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ventana principal -->
+  <rect x="40" y="40" width="640" height="460" rx="24" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- Barra superior -->
+  <circle cx="76" cy="76" r="6" fill="#10b981"/>
+  <circle cx="98" cy="76" r="6" fill="#0ea5e9"/>
+  <circle cx="120" cy="76" r="6" fill="#334155"/>
+  <rect x="270" y="64" width="180" height="24" rx="12" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="80" y="104" width="560" height="1.5" fill="#ffffff" fill-opacity="0.06"/>
+
+  <!-- Barra lateral -->
+  <rect x="80" y="128" width="112" height="14" rx="7" fill="url(#lineGrad)" fill-opacity="0.9"/>
+  <rect x="80" y="158" width="88" height="12" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="80" y="186" width="96" height="12" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="80" y="214" width="72" height="12" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="80" y="242" width="92" height="12" rx="6" fill="#ffffff" fill-opacity="0.12"/>
+
+  <!-- Tarjetas KPI -->
+  <g>
+    <rect x="220" y="128" width="126" height="76" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="358" y="128" width="126" height="76" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="496" y="128" width="126" height="76" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.07"/>
+    <rect x="236" y="144" width="52" height="10" rx="5" fill="#ffffff" fill-opacity="0.18"/>
+    <rect x="374" y="144" width="52" height="10" rx="5" fill="#ffffff" fill-opacity="0.18"/>
+    <rect x="512" y="144" width="52" height="10" rx="5" fill="#ffffff" fill-opacity="0.18"/>
+    <text x="236" y="188" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">+Tráfico</text>
+    <text x="374" y="188" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#10b981">48,2K</text>
+    <text x="512" y="188" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0ea5e9">100</text>
+  </g>
+
+  <!-- Gráfica de línea -->
+  <rect x="220" y="228" width="402" height="180" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <line x1="236" y1="272" x2="606" y2="272"/>
+    <line x1="236" y1="316" x2="606" y2="316"/>
+    <line x1="236" y1="360" x2="606" y2="360"/>
+  </g>
+  <path d="M236 368 L300 348 L364 356 L428 316 L492 300 L556 256 L606 244 L606 392 L236 392 Z" fill="url(#areaGrad)"/>
+  <path d="M236 368 L300 348 L364 356 L428 316 L492 300 L556 256 L606 244" fill="none" stroke="url(#lineGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="556" cy="256" r="6" fill="#0f172a" stroke="#10b981" stroke-width="3"/>
+  <circle cx="606" cy="244" r="6" fill="#0f172a" stroke="#0ea5e9" stroke-width="3"/>
+
+  <!-- Barras -->
+  <rect x="220" y="428" width="402" height="52" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
+  <g>
+    <rect x="244" y="452" width="22" height="16" rx="4" fill="#10b981" fill-opacity="0.45"/>
+    <rect x="282" y="444" width="22" height="24" rx="4" fill="#10b981" fill-opacity="0.6"/>
+    <rect x="320" y="436" width="22" height="32" rx="4" fill="#0ea5e9" fill-opacity="0.55"/>
+    <rect x="358" y="448" width="22" height="20" rx="4" fill="#10b981" fill-opacity="0.5"/>
+    <rect x="396" y="428" width="22" height="40" rx="4" fill="#0ea5e9" fill-opacity="0.7"/>
+    <rect x="434" y="440" width="22" height="28" rx="4" fill="#10b981" fill-opacity="0.65"/>
+    <rect x="472" y="424" width="22" height="44" rx="4" fill="#0ea5e9" fill-opacity="0.85"/>
+    <rect x="510" y="434" width="22" height="34" rx="4" fill="#10b981" fill-opacity="0.8"/>
+    <rect x="548" y="416" width="22" height="52" rx="4" fill="url(#lineGrad)"/>
+  </g>
+
+  <!-- Insignia flotante -->
+  <g>
+    <circle cx="596" cy="96" r="34" fill="#0f172a" stroke="url(#badgeGrad)" stroke-width="3"/>
+    <text x="596" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">#1</text>
+  </g>
+
+  <!-- Tarjeta lateral inferior -->
+  <rect x="80" y="284" width="112" height="196" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.07"/>
+  <circle cx="112" cy="324" r="18" fill="url(#badgeGrad)" fill-opacity="0.2"/>
+  <path d="M105 324 l5 5 l9 -10" stroke="#10b981" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="360" width="80" height="10" rx="5" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="80" y="382" width="64" height="10" rx="5" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="80" y="404" width="72" height="10" rx="5" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="80" y="440" width="112" height="1.5" fill="#ffffff" fill-opacity="0.06"/>
+  <text x="80" y="468" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#10b981">SEO</text>
+</svg>

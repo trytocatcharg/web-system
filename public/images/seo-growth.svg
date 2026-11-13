@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">Crecimiento en Google</title>
+  <desc id="desc">Gráfica ascendente que representa el ascenso de una web hasta el primer puesto de Google</desc>
+  <defs>
+    <linearGradient id="growthLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="growthArea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111a2e"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="numGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="64" width="592" height="392" rx="24" fill="url(#panelGrad)" stroke="#ffffff" stroke-opacity="0.08"/>
+
+  <!-- Buscador -->
+  <rect x="72" y="104" width="420" height="44" rx="22" fill="#070b16" stroke="#ffffff" stroke-opacity="0.1"/>
+  <circle cx="98" cy="126" r="9" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <line x1="105" y1="133" x2="111" y2="139" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="124" y="118" width="150" height="14" rx="7" fill="#ffffff" fill-opacity="0.25"/>
+  <rect x="124" y="118" width="40" height="14" rx="7" fill="#ffffff" fill-opacity="0.45"/>
+  <rect x="508" y="104" width="66" height="44" rx="22" fill="url(#numGrad)"/>
+  <text x="541" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Buscar</text>
+
+  <!-- Rejilla -->
+  <g stroke="#ffffff" stroke-opacity="0.05">
+    <line x1="72" y1="200" x2="568" y2="200"/>
+    <line x1="72" y1="268" x2="568" y2="268"/>
+    <line x1="72" y1="336" x2="568" y2="336"/>
+    <line x1="72" y1="404" x2="568" y2="404"/>
+  </g>
+
+  <!-- Área y línea de crecimiento -->
+  <path d="M96 396 L196 372 L296 380 L396 308 L496 268 L556 216 L556 424 L96 424 Z" fill="url(#growthArea)"/>
+  <path d="M96 396 L196 372 L296 380 L396 308 L496 268 L556 216" fill="none" stroke="url(#growthLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Marcadores de posición -->
+  <g font-family="Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <circle cx="196" cy="372" r="17" fill="#0f172a" stroke="#10b981" stroke-width="2.5"/>
+    <text x="196" y="378" font-size="13" fill="#6ee7b7">10</text>
+    <circle cx="396" cy="308" r="17" fill="#0f172a" stroke="#0ea5e9" stroke-width="2.5"/>
+    <text x="396" y="314" font-size="13" fill="#38bdf8">3</text>
+  </g>
+
+  <!-- Flecha final -->
+  <path d="M540 200 L568 216 L544 236" fill="none" stroke="url(#growthLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Medalla número 1 -->
+  <g>
+    <circle cx="556" cy="196" r="34" fill="#0f172a" stroke="url(#numGrad)" stroke-width="3.5"/>
+    <text x="556" y="207" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff">1</text>
+  </g>
+
+  <!-- Etiquetas de ejes -->
+  <rect x="96" y="436" width="70" height="10" rx="5" fill="#ffffff" fill-opacity="0.1"/>
+  <rect x="486" y="436" width="70" height="10" rx="5" fill="#ffffff" fill-opacity="0.1"/>
+</svg>
