@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { LogoHomeLink } from "@/components/LogoHomeLink";
 import { SITE, whatsappLink } from "@/lib/site";
 
@@ -72,11 +71,24 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-6 sm:flex-row">
+        <div className="mt-12 flex flex-col items-start gap-3 border-t border-white/5 pt-6">
           <p className="text-sm text-zinc-500">
             © {new Date().getFullYear()} {SITE.name}. Todos los derechos
             reservados.
           </p>
+          <nav aria-label="Privacidad y cookies">
+            <ul>
+              <li>
+                <button
+                  type="button"
+                  data-cky-tag="revisit-consent"
+                  className="text-sm text-zinc-500 transition-colors hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-400"
+                >
+                  Configuración de cookies
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
