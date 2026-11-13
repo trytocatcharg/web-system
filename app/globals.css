@@ -81,6 +81,10 @@
     background-color: var(--color-ink-950);
     color: var(--color-zinc-100);
   }
+
+  button {
+    cursor: pointer;
+  }
 }
 
 @utility bg-grid {
